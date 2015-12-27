@@ -19,7 +19,8 @@ angular.module('readingList', [])
 .directive('bookCover', function(){
   return {
     restrict: 'E',
-    templateURL: 'partials/book-cover.html'
+    templateURL: 'partials/book-cover.html',
+    replace: true
   };
 });
 

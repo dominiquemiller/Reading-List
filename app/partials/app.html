@@ -1,4 +1,4 @@
-<h1>Angular Reading List of Awesome</h1>
+<h1>Angular Reading List</h1>
 
 <div class="row" ng-controller="ReadingListController as readingListCtrl">
 
@@ -9,8 +9,8 @@
 
   <ul class="list-unstyled col-sm-8">
     <li class="book row" ng-repeat="book in readingListCtrl.books">
-      
-      <book-cover></book-cover>
+
+      <div ng-include="'partials/book-cover.html'"></div>
 
       <div class="col-sm-8">
         <h3><a href="http://www.amazon.com/gp/product/{{book.isbn}}"
@@ -20,7 +20,7 @@
 
         <p>{{book.review}}</p>
 
-        <book-genres></book-genres>
+        <div ng-include="'partials/book-genres.html'"></div>
 
       </div>
     </li>

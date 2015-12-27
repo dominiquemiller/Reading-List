@@ -1,22 +1,23 @@
 <!DOCTYPE html>
+<html>
+  <!--[if gt IE 8]><!--> <html lang="en" ng-app="readingList" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Reading List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
 
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="readingList" class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AngularJS Reading List</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css"/>
-</head>
+  <body ng-app="readingList">
 
-<body ng-app="readingList">
-  <div class="container" ng-include="'partials/app.html'"></div>
+    <div class="container" ng-include="'partials/app.html'"></div>
 
-  <script src="/bower_components/angular/angular.js"></script>
-  <script src="/bower_components/angular-route/angular-route.js"></script>
-  <script src="js/app.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
 
-</body>
+  </body>
 </html>
