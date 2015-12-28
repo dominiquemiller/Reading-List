@@ -1,7 +1,6 @@
 (function(){
 'use strict';
 
-// Declare app level module which depends on views, and components
 angular.module('readingList', [])
 
 .controller("ReadingListController", function(){
@@ -12,7 +11,10 @@ angular.module('readingList', [])
 .directive('bookGenres', function(){
   return {
     restrict: 'E',
-    templateURL: 'partials/book-genres.html'
+    templateURL: 'partials/book-genres.html',
+    scope: {
+      genres: '='
+    }
   };
 })
 
@@ -31,7 +33,7 @@ angular.module('readingList', [])
     replace: true,
     controller: function(){
       this.showForm = false;
-      this.book = {};
+      this.book = {genres:{}};
     },
     controllerAs: 'reviewFormCtrl',
     scope: {
