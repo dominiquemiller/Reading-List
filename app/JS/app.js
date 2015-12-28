@@ -31,8 +31,13 @@ angular.module('readingList', [])
     replace: true,
     controller: function(){
       this.showForm = false;
+      this.book = {};
     },
-    controllerAs: 'reviewFormCtrl'
+    controllerAs: 'reviewFormCtrl',
+    scope: {
+      books: '=',
+      genres: '='
+    }
   };
 });
 
