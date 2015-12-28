@@ -22,6 +22,18 @@ angular.module('readingList', [])
     templateURL: 'partials/book-cover.html',
     replace: true
   };
+})
+
+.directive('reviewForm', function(){
+  return {
+    restrict: 'E',
+    templateURL: 'partials/review-form.html',
+    replace: true,
+    controller: function(){
+      this.showForm = false;
+    },
+    controllerAs: 'reviewFormCtrl'
+  };
 });
 
 var genres = [ 'fable', 'fantasy', 'fiction', 'folklore', 'horror', 'humor', 'legend', 'metafiction', 'mystery', 'mythology', 'non-fiction', 'poetry' ];
